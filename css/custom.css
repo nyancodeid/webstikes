@@ -1,0 +1,32 @@
+.blue-text {
+    color: #1976D2;
+}
+.about-us-container {
+    padding: 4em 24px;
+}
+.about-us-container p {
+    line-height: 1.5;
+}
+
+.image-container-full {
+    height: 21em;
+    width: 100%;
+}
+.image-perawatan {
+    background: url('../img/perawatan.png');
+}
+.cover-image {
+    background-size: cover;
+}
+
+.prodiController {
+    margin-left: -10vw;
+    margin-right: -10vw;
+}
+
+@media only screen and (max-width: 768px) {
+    .prodiController {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+}
