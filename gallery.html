@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>Sekolah Tinggi Ilmu Kesehatan Insan Cendekia Jombang</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="img-min/core-img/lo.png">
+
+    <!-- Style CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body ng-app="website">
+    <!-- Preloader Start -->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="world-load"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <!-- Logo -->
+                        <a class="navbar-brand" href="index.html"><img src="img-min/core-img/lo.png" alt="Logo"></a>
+                        <!-- Navbar Toggler -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#worldNav" aria-controls="worldNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <!-- Navbar -->
+                        <div class="collapse navbar-collapse" id="worldNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prodi</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="http://d3-analis.stikesicme-jbg.ac.id/">D3 Analis Kesehatan</a>
+                                        <a class="dropdown-item" href="http://d3-keperawatan.stikesicme-jbg.ac.id/">D3 Keperawatan</a>
+                                        <a class="dropdown-item" href="https://stikesicme-jbg.ac.id/d3kebidanan/">D3 Kebidanan</a>
+                                        <a class="dropdown-item" href="https://stikesicme-jbg.ac.id/d-iv-bidan-pendidik/">D4 Bidan Pendidik</a>
+                                        <a class="dropdown-item" href="http://ners.stikesicme-jbg.ac.id/">Profesi Ners</a>
+                                        <a class="dropdown-item" href="https://stikesicme-jbg.ac.id/s1keperawatan/">S1 Keperawatan</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Berita</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="profile.html">Profil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://139.59.107.249/pmb">SPMB</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Direktori</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="http://d3-analis.stikesicme-jbg.ac.id/">Alumni</a>
+                                        <a class="dropdown-item" href="http://d3-keperawatan.stikesicme-jbg.ac.id/">Mahasiswa</a>
+                                        <a class="dropdown-item" href="https://stikesicme-jbg.ac.id/d3kebidanan/">Dosen dan Staff</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="http://digilib.stikesicme-jbg.ac.id/ojs/">OJS</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <!-- Search Form  -->
+                            <div id="search-wrapper">
+                                <form action="#">
+                                    <input type="text" id="search" placeholder="Search something...">
+                                    <div id="close-icon"></div>
+                                    <input class="d-none" type="submit" value="">
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ********** Hero Area Start ********** -->
+    <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(img/blog-img/bg4.jpg);"></div>
+    <!-- ********** Hero Area End ********** -->
+
+    <div class="regular-page-wrap section-padding-50">
+        <div class="container">
+            <header class="section-header text-center sectionPadding">
+                <h3>Galleri Foto</h3>
+                <p>Setiap kegiatan yang di abadikan melalui Foto.</p>
+            </header>
+            <div class="row justify-content-center" ng-controller="GalleryController as gallery">
+                <div class="col-12 col-md-4">
+                    <!-- Single Blog Post -->
+                    <div class="single-blog-post">
+                        <!-- Post Thumbnail -->
+                        <div class="post-thumbnail">
+                            <img data-src="gallery/bazar.jpg" class="lazyload" />
+                            <!-- Catagory -->
+                            <div class="post-cta"><a href="#">travel</a></div>
+                        </div>
+                        <!-- Post Content -->
+                        <div class="post-content">
+                            <a href="#" class="headline">
+                                <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
+                            </a>
+                            <p>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in...</p>
+                            <!-- Post Meta -->
+                            <div class="post-meta">
+                                <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ***** Footer Area Start ***** -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="footer-single-widget">
+                        <a href="#">
+                            <!-- <img src="img/core-img/logo.png" alt=""> -->
+                            <h3 class="text-white">STIKES ICME Jombang</h3>
+                            <span>Sekolah Tinggi Ilmu Kesehatan</span><br>
+                            <span>Insan Cendekia Medika</span><br>
+                            <span>Jl. Kemuning No.57</span><br>
+                            <span>Candimulyo</span><br>
+                            <span>Jombang</span><br>
+                            <br><br>
+                            <span>+(0321) 865446</span><br>
+                            <span>www.stikesicme-jbg.ac.id</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="footer-single-widget">
+                        <ul class="footer-menu d-flex justify-content-between">
+                            <li><a href="https://stikesicme-jbg.ac.id">Home</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/profil.html">Profil</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id">LPMI</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id">SPMB</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id">Alumni</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id">OJS</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id">Galeri</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="footer-single-widget">
+                        <h5>Subscribe</h5>
+                        <form action="#" method="post">
+                            <input type="email" name="email" id="email" placeholder="Enter your mail">
+                            <button type="button"><i class="fa fa-arrow-right"></i></button>
+                        </form>
+                        
+                        <div class="copywrite-text mt-30">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ***** Footer Area End ***** -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- Angular js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
+    <!-- lazysizes js -->
+    <script src="js/lazysizes.min.js" async=""></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="js/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+    <!-- App js -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

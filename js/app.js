@@ -25,10 +25,17 @@ var prodis = [
     }
 ]
 
-angular.module('website', []).controller('ProdiController', function () {
+angular.module('website', [])
+.controller('ProdiController', function () {
     this.style = {
         'margin-left': '-10vw',
         'margin-right': '-10vw'
     }
     this.prodis = prodis
 })
+.controller('GalleryController', function($scope, $http) {
+    $http.get('gallery.json').success(function(gallery) {
+        $scope.data = gallery
+    })
+})
+
