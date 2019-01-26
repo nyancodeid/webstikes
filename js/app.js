@@ -34,8 +34,13 @@ angular.module('website', [])
     this.prodis = prodis
 })
 .controller('GalleryController', function($scope, $http) {
-    $http.get('gallery.json').success(function(gallery) {
-        $scope.data = gallery
+    $scope.data = []
+
+    $.getJSON('gallery.json', function(gallery) {
+
+        $scope.$apply(function () {
+            $scope.data = gallery;
+        });
     })
 })
 

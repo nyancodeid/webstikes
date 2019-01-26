@@ -22,11 +22,11 @@
 
 <body ng-app="website">
     <!-- Preloader Start -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div class="preload-content">
             <div id="world-load"></div>
         </div>
-    </div>
+    </div> -->
     <!-- Preloader End -->
 
     <!-- ***** Header Area Start ***** -->
@@ -110,24 +110,24 @@
                 <p>Setiap kegiatan yang di abadikan melalui Foto.</p>
             </header>
             <div class="row justify-content-center" ng-controller="GalleryController as gallery">
-                <div class="col-12 col-md-4">
+                <div class="col-12 col-md-4" ng-repeat="gambar in data">
                     <!-- Single Blog Post -->
                     <div class="single-blog-post">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img data-src="gallery/bazar.jpg" class="lazyload" />
+                            <img data-src="{{ gambar.link }}" alt="{{ gambar.title }} - {{ gambar.description }}" class="lazyload" />
                             <!-- Catagory -->
-                            <div class="post-cta"><a href="#">travel</a></div>
+                            <div class="post-cta"><a href="#">Galeri</a></div>
                         </div>
                         <!-- Post Content -->
                         <div class="post-content">
                             <a href="#" class="headline">
-                                <h5>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in Physics?</h5>
+                                <h5>{{ gambar.title }}</h5>
                             </a>
-                            <p>How Did van Gogh’s Turbulent Mind Depict One of the Most Complex Concepts in...</p>
+                            <p>{{ gambar.description }}</p>
                             <!-- Post Meta -->
                             <div class="post-meta">
-                                <p><a href="#" class="post-author">Katy Liu</a> on <a href="#" class="post-date">Sep 29, 2017 at 9:48 am</a></p>
+                                <p><a href="#" class="post-author">Jurnalis</a> on <a href="#" class="post-date">{{ gambar.date }}</a></p>
                             </div>
                         </div>
                     </div>
