@@ -37,6 +37,11 @@ angular.module('website', [])
     $scope.data = []
 
     $.getJSON('gallery.json', function(gallery) {
+        gallery = gallery.map(function(image) {
+            image.link = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url=" + encodeURI(image.link)
+        
+            return image;
+        })
 
         $scope.$apply(function () {
             $scope.data = gallery;

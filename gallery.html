@@ -42,8 +42,8 @@
                         <!-- Navbar -->
                         <div class="collapse navbar-collapse" id="worldNav">
                             <ul class="navbar-nav ml-auto">
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/">Beranda <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Prodi</a>
@@ -57,7 +57,7 @@
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Berita</a>
+                                    <a class="nav-link" href="/berita">Berita</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="profile.html">Profil</a>
@@ -79,8 +79,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="http://digilib.stikesicme-jbg.ac.id/ojs/">OJS</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="contact.html">Contact</a>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="gallery.html">Galeri</a>
                                 </li>
                             </ul>
                             <!-- Search Form  -->
@@ -100,15 +100,16 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ********** Hero Area Start ********** -->
-    <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(img/blog-img/bg4.jpg);"></div>
+    <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(img/blog-img/bg4.jpg);">
+        <header class="section-header text-center" style="padding-top: calc((400px / 2) - (63px / 2));">
+            <h3 class="text-white">Galleri Foto</h3>
+            <p>Setiap kegiatan yang di abadikan melalui Foto.</p>
+        </header>
+    </div>
     <!-- ********** Hero Area End ********** -->
 
     <div class="regular-page-wrap section-padding-50">
         <div class="container">
-            <header class="section-header text-center sectionPadding">
-                <h3>Galleri Foto</h3>
-                <p>Setiap kegiatan yang di abadikan melalui Foto.</p>
-            </header>
             <div class="row justify-content-center" ng-controller="GalleryController as gallery">
                 <div class="col-12 col-md-4" ng-repeat="gambar in data">
                     <!-- Single Blog Post -->
@@ -142,31 +143,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="footer-single-widget">
+                    <div class="footer-single-widget" style="color: #8d8d8d;">
                         <a href="#">
-                            <!-- <img src="img/core-img/logo.png" alt=""> -->
+                            <img src="img/core-img/lo.png" alt="">
                             <h3 class="text-white">STIKES ICME Jombang</h3>
-                            <span>Sekolah Tinggi Ilmu Kesehatan</span><br>
-                            <span>Insan Cendekia Medika</span><br>
-                            <span>Jl. Kemuning No.57</span><br>
-                            <span>Candimulyo</span><br>
-                            <span>Jombang</span><br>
-                            <br><br>
-                            <span>+(0321) 865446</span><br>
-                            <span>www.stikesicme-jbg.ac.id</span>
                         </a>
+                        <span>Sekolah Tinggi Ilmu Kesehatan</span><br>
+                        <span>Insan Cendekia Medika</span><br>
+                        <span>Jl. Kemuning No.57</span><br>
+                        <span>Candimulyo</span><br>
+                        <span>Jombang</span><br>
+                        <br><br>
+                        <span>+(0321) 865446</span><br>
+                        <span>www.stikesicme-jbg.ac.id</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="footer-single-widget">
                         <ul class="footer-menu d-flex justify-content-between">
-                            <li><a href="https://stikesicme-jbg.ac.id">Home</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/">Home</a></li>
                             <li><a href="https://stikesicme-jbg.ac.id/profil.html">Profil</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">LPMI</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">SPMB</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">Alumni</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">OJS</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">Galeri</a></li>
+                            <li><a href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a></li>
+                            <li><a href="http://139.59.107.249/pmb">SPMB</a></li>
+                            <li><a href="http://test-siakad.stikesicme-jbg.ac.id/tracer">Alumni</a></li>
+                            <li><a href="http://digilib.stikesicme-jbg.ac.id/ojs/">OJS</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/gallery.html">Galeri</a></li>
                         </ul>
                     </div>
                 </div>
