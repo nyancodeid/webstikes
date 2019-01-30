@@ -172,12 +172,12 @@
                     beridirilah <strong>STIKES ICME</strong> yang di deklarasikan pada 29 September 2005.</p>
                 </div>
                 <div class="col-12 col-md-6">
-                    <img src="img-min/school.png" class="col-12" alt="">
+                    <img data-src="img-min/school.png" class="col-12 lazyload" alt="">
                 </div>
             </div>
             <div class="row section-padding-50">
                 <div class="col-12 col-md-6">
-                    <img src="img-min/layanan.jpg" class="col-12" alt="">
+                    <img data-src="img-min/layanan.jpg" class="col-12 lazyload" alt="">
                 </div>
                 <div class="col-12 col-md-6">
                     <h1>Layanan Digital</h1>
@@ -189,15 +189,12 @@
                         <div class="col-6">
                             <ul class="list-unstyled">
                                 <li>
-                                    <i class="fa fa-quote-right"></i>
                                     <a href="http://digilib.stikesicme-jbg.ac.id/elearning/">E-Learning</a>
                                 </li>
                                 <li>
-                                    <i class="fa fa-quote-right"></i>
                                     <a href="http://digilib.stikesicme-jbg.ac.id/">Perpustakaan Digital</a>
                                 </li>
                                 <li>
-                                    <i class="fa fa-quote-right"></i>
                                     <a href="http://digilib.stikesicme-jbg.ac.id/ojs/">E-Jurnal (OJS)</a>
                                 </li>
                             </ul>
@@ -205,15 +202,12 @@
                         <div class="col-6">
                             <ul class="list-unstyled">
                                 <li>
-                                    <i class="fa fa-quote-right"></i>
                                     <a href="http://repo.stikesicme-jbg.ac.id/">Repository</a>
                                 </li>
                                 <li>
-                                    <i class="fa fa-quote-right"></i>
                                     <a href="http://test-siakad.stikesicme-jbg.ac.id/">SIAKAD</a>
                                 </li>
                                 <li>
-                                    <i class="fa fa-quote-right"></i>
                                     <a href="http://test-siakad.stikesicme-jbg.ac.id/tracer">Tracer Study</a>
                                 </li>
                             </ul>
@@ -228,7 +222,10 @@
                 </header>
                 <div class="col-12">
                     <div class="row fasilitasSection">
-                        <div class="col-12 col-md-3">
+                        <div class="col-12 only-mobile">
+                            <img data-src="img-min/fasilitas.png" class="col-12 lazyload" alt="">
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3">
                             <ul class="list-unstyled">
                                 <li>
                                     <span>Kelas Tertutup ber-AC</span>
@@ -247,11 +244,11 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <img src="img-min/fasilitas.png" class="col-12" alt="">
+                        <div class="col-12 col-md-6 only-desktop">
+                            <img data-src="img-min/fasilitas.webp" onerror="this.onerror=null; this.src='img-min/fasilitas.png'" class="col-12 lazyload" alt="">
                         </div>
-                        <div class="col-12 col-md-3">
-                            <ul class="list-unstyled text-right">
+                        <div class="col-12 col-sm-6 col-md-3">
+                            <ul class="list-unstyled text-right text-left-xs">
                                 <li>
                                     <span>Lab. Komputer</span>
                                 </li>
@@ -280,17 +277,17 @@
             </header>
             <div class="row justify-content-center prodiController" ng-controller="ProdiController as controller">
                 <div class="col-12 col-md-6 col-lg-3" ng-repeat="prodi in controller.prodis">
-                    <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.2s">
+                    <div class="single-blog-post post-style-3 mt-50" data-wow-delay="0.2s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img src="img-min/blog-img/piala1.jpg" alt="">
+                            <img data-src="img-min/post-background.png" class="lazyload" alt="">
                             <!-- Post Content -->
                             <div class="post-content d-flex align-items-center justify-content-between">
                                 <!-- Catagory -->
                                 <div class="post-tag"><a href="#">Program Studi</a></div>
                                 <!-- Headline -->
                                 <a ng-href="{{ prodi.website }}" class="headline">
-                                    <h5>{{ prodi.name }}</h5>
+                                    <h5 class="prodiTitle">{{ prodi.name }}</h5>
                                 </a>
                                 <!-- Post Meta -->
                                 <div class="post-meta">
@@ -312,7 +309,7 @@
                     <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.2s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img src="img-min/blog-img/piala1.jpg" alt="">
+                            <img data-src="img-min/blog-img/piala1.jpg" class="lazyload" alt="">
                             <!-- Post Content -->
                             <div class="post-content d-flex align-items-center justify-content-between">
                                 <!-- Catagory -->
@@ -333,7 +330,7 @@
                     <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.4s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img src="img-min/blog-img/kti.jpg" alt="">
+                            <img data-src="img-min/blog-img/kti.jpg" class="lazyload" alt="">
                             <!-- Post Content -->
                             <div class="post-content d-flex align-items-center justify-content-between">
                                 <!-- Catagory -->
@@ -354,7 +351,7 @@
                     <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.6s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img src="img-min/blog-img/pemudi.jpg" alt="">
+                            <img data-src="img-min/blog-img/pemudi.jpg" alt="" class="lazyload">
                             <!-- Post Content -->
                             <div class="post-content d-flex align-items-center justify-content-between">
                                 <!-- Catagory -->
@@ -379,8 +376,9 @@
                             <h5>Video Terbaru dari STIKES ICME Jombang</h5>
                         </div>
                         <!-- video profil -->
-                       <iframe width="100%" height="315" src="https://www.youtube.com/embed/9UxR8CJTRic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                       <iframe width="100%" height="315" class="lazyload" data-src="https://www.youtube.com/embed/9UxR8CJTRic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                             <!-- Post Content -->
+                        
                             
 
                         <!-- gak kanngo -->
@@ -421,31 +419,31 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
-                    <div class="footer-single-widget">
+                    <div class="footer-single-widget" style="color: #8d8d8d;">
                         <a href="#">
-                            <!-- <img src="img/core-img/logo.png" alt=""> -->
+                            <img data-src="img/core-img/lo.png" alt="" class="lazyload">
                             <h3 class="text-white">STIKES ICME Jombang</h3>
-                            <span>Sekolah Tinggi Ilmu Kesehatan</span><br>
-                            <span>Insan Cendekia Medika</span><br>
-                            <span>Jl. Kemuning No.57</span><br>
-                            <span>Candimulyo</span><br>
-                            <span>Jombang</span><br>
-                            <br><br>
-                            <span>+(0321) 865446</span><br>
-                            <span>www.stikesicme-jbg.ac.id</span>
                         </a>
+                        <span>Sekolah Tinggi Ilmu Kesehatan</span><br>
+                        <span>Insan Cendekia Medika</span><br>
+                        <span>Jl. Kemuning No.57</span><br>
+                        <span>Candimulyo</span><br>
+                        <span>Jombang</span><br>
+                        <br><br>
+                        <span>+(0321) 865446</span><br>
+                        <span>www.stikesicme-jbg.ac.id</span>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="footer-single-widget">
                         <ul class="footer-menu d-flex justify-content-between">
-                            <li><a href="https://stikesicme-jbg.ac.id">Home</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/">Home</a></li>
                             <li><a href="https://stikesicme-jbg.ac.id/profil.html">Profil</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">LPMI</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">SPMB</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">Alumni</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">OJS</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id">Galeri</a></li>
+                            <li><a href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a></li>
+                            <li><a href="http://139.59.107.249/pmb">SPMB</a></li>
+                            <li><a href="http://test-siakad.stikesicme-jbg.ac.id/tracer">Alumni</a></li>
+                            <li><a href="http://digilib.stikesicme-jbg.ac.id/ojs/">OJS</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/gallery.html">Galeri</a></li>
                         </ul>
                     </div>
                 </div>
@@ -478,6 +476,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/bootstrap.min.js"></script>
+    <!-- lazysizes js -->
+    <script src="js/lazysizes.min.js" async=""></script>
     <!-- Plugins js -->
     <script src="js/plugins.js"></script>
     <!-- Active js -->

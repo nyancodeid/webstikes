@@ -48,4 +48,122 @@ angular.module('website', [])
         });
     })
 })
+.controller('BiayaController', function($scope) {
+    var static = {
+        sumbangan: 'Rp. 1.500.000',
+        perlengkapan: 'Rp. 2.100.000',
+        her: 'Rp. 500.000',
+        pendaftaran: 'Rp. 250.000',
+        s1Keperawatan: {
+            praktek: 'Rp. 100.000'            
+        },
+        d3Keperawatan: {
+            praktek: 'Rp. 75.000'
+        },
+        d4Kebidanan: {
+            praktek: 'Rp. 75.000'
+        },
+        d3Kebidanan: {
+            praktek: 'Rp. 75.000'
+        },
+        d3Analis: {
+            praktek: 'Rp. 200.000'
+        }
+    }
+    var reguler = {
+        s1Keperawatan: {
+            dppp: 'Rp. 13.500.000',
+            spp: 'Rp. 700.000',
+        },
+        d3Keperawatan: {
+            dppp: 'Rp. 10.000.000',
+            spp: 'Rp. 600.000',
+        },
+        d3Kebidanan: {
+            dppp: 'Rp. 10.000.000',
+            spp: 'Rp. 600.000',
+        },
+        d4Kebidanan: {
+            dppp: 'Rp. 10.000.000',
+            spp: 'Rp. 600.000',
+        },
+        d3Analis: {
+            dppp: 'Rp. 10.000.000',
+            spp: 'Rp. 650.000',
+        }
+    }
+    var bidikMisi = {
+        s1Keperawatan: {
+            dppp: '',
+            spp: 'Rp. 450.000',
+        },
+        d3Keperawatan: {
+            dppp: '',
+            spp: 'Rp. 375.000',
+        },
+        d3Kebidanan: {
+            dppp: '',
+            spp: 'Rp. 300.000',
+        },
+        d4Kebidanan: {
+            dppp: '',
+            spp: 'Rp. 300.000',
+        },
+        d3Analis: {
+            dppp: '',
+            spp: 'Rp. 450.000',
+        }
+    }
+    var prestasi = {
+        s1Keperawatan: {
+            dppp: 'Rp. 7.500.000',
+            spp: 'Rp. 450.000',
+        },
+        d3Keperawatan: {
+            dppp: 'Rp. 6.000.000',
+            spp: 'Rp. 375.000',
+        },
+        d3Kebidanan: {
+            dppp: 'Rp. 5.000.000',
+            spp: 'Rp. 300.000',
+        },
+        d4Kebidanan: {
+            dppp: 'Rp. 5.000.000',
+            spp: 'Rp. 300.000',
+        },
+        d3Analis: {
+            dppp: 'Rp. 6.000.000',
+            spp: 'Rp. 450.000',
+        }
+    }
+    var eksekutif = {
+        s1Keperawatan: {
+            dppp: 'Rp. 15.000.000',
+            spp: 'Rp. 900.000',
+        },
+        d3Keperawatan: {
+            dppp: 'Rp. 12.000.000',
+            spp: 'Rp. 700.000',
+        },
+        d3Kebidanan: {
+            dppp: 'Rp. 10.000.000',
+            spp: 'Rp. 600.000',
+        },
+        d4Kebidanan: {
+            dppp: 'Rp. 10.000.000',
+            spp: 'Rp. 600.000',
+        },
+        d3Analis: {
+            dppp: 'Rp. 12.000.000',
+            spp: 'Rp. 800.000',
+        }
+    }
+
+    $scope.reguler = reguler;
+    $scope.bidikMisi = bidikMisi;
+    $scope.prestasi = prestasi;
+    $scope.eksekutif = eksekutif;
+
+    $scope.default = static;
+})
 
