@@ -94,23 +94,23 @@ angular.module('website', [])
     }
     var bidikMisi = {
         s1Keperawatan: {
-            dppp: '',
+            dppp: '-',
             spp: 'Rp. 450.000',
         },
         d3Keperawatan: {
-            dppp: '',
+            dppp: '-',
             spp: 'Rp. 375.000',
         },
         d3Kebidanan: {
-            dppp: '',
+            dppp: '-',
             spp: 'Rp. 300.000',
         },
         d4Kebidanan: {
-            dppp: '',
+            dppp: '-',
             spp: 'Rp. 300.000',
         },
         d3Analis: {
-            dppp: '',
+            dppp: '-',
             spp: 'Rp. 450.000',
         }
     }

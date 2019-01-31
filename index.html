@@ -13,7 +13,29 @@
 
     <!-- Favicon  -->
     <link rel="icon" href="img-min/core-img/lo.png">
-
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #preloader {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -ms-grid-row-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background-color: #232323;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: 1000000;
+        }
+    </style>
     <!-- Style CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -66,7 +88,7 @@
                                     <a class="nav-link" href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="http://139.59.107.249/pmb">SPMB</a>
+                                    <a class="nav-link" href="pmb.html">PMB</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Layanan Digital</a>
@@ -163,7 +185,10 @@
 
     <div class="main-content-wrapper section-padding-50">
         <div class="container">
-            <div class="row section-padding-50">
+            <div class="row section-padding-50 h-400 align-items-center justify-content-center">
+                <div class="col-12 col-md-6">
+                    <img data-src="img-min/school.png" class="col-12 lazyload" alt="">
+                </div>
                 <div class="col-12 col-md-6">
                     <h1>Sekilas</h1>
                     <p style="line-height: 1.6;"><strong>STIKES Insan Cendekia Medika</strong> digagas atas idealisme dan arah pendidikan yang berkembang di Indonesia dan Jawa Timur
@@ -171,8 +196,18 @@
                     Berakhlakul Karimah. Atas prakarsa Yayasan <strong>SAMODRA ILMU CENDEKIA</strong> yang berpusat di Jl. Raya Ijen 24 Mojokerto, maka
                     beridirilah <strong>STIKES ICME</strong> yang di deklarasikan pada 29 September 2005.</p>
                 </div>
+            </div>
+            <div class="row section-padding-50 h-400 align-items-center justify-content-center">
                 <div class="col-12 col-md-6">
-                    <img data-src="img-min/school.png" class="col-12 lazyload" alt="">
+                    <h1>Informasi Penerimaan Mahasiswa Baru</h1>
+                    <p style="line-height: 1.6;">STIKES ICME Jombang membuka Penerimaan Mahasiswa Baru untuk tahun Akademik 2019/2020 untuk melihat detail Informasi kamu bisa buka link di bawah ini.</p>
+                    <br>
+                    <a href="pmb.html" class="border linkSelengkapnya">Baca Selengkapnya →</a>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img data-src="img-min/informasi.webp" class="col-12 lazyload" onerror="this.onerror=null; this.src='img-min/informasi.png'">
                 </div>
             </div>
             <div class="row section-padding-50">
@@ -218,7 +253,7 @@
             <div class="row justify-content-center sectionPadding">
                 <header class="section-header text-center">
                     <h3>Sarana dan Prasarana</h3>
-                    <p>Untuk menunjang minat membaca dan kegiatan di Lingungan Perpustakaan kami menyediakan fasilitas fasilitas yang bisa bermanfaat, nyaman dan mendukung.</p>
+                    <p>Untuk menunjang prosess pembelajaran dan kelulusan di STIKES ICME Jombang kami menyediakan fasilitas pendukung yang bisa bermanfaat, nyaman dan meningkatkan semangat belajar.</p>
                 </header>
                 <div class="col-12">
                     <div class="row fasilitasSection">
@@ -272,8 +307,7 @@
 
             <header class="section-header text-center sectionPadding">
                 <h3>Program Studi</h3>
-                <p>Untuk menunjang minat membaca dan kegiatan di Lingungan Perpustakaan kami menyediakan fasilitas fasilitas yang
-                    bisa bermanfaat, nyaman dan mendukung.</p>
+                <p>Berikut adalah Program Studi yang ada di STIKES ICME Jombang.</p>
             </header>
             <div class="row justify-content-center prodiController" ng-controller="ProdiController as controller">
                 <div class="col-12 col-md-6 col-lg-3" ng-repeat="prodi in controller.prodis">
@@ -300,8 +334,7 @@
 
             <header class="section-header text-center sectionPadding">
                 <h3>Prestasi</h3>
-                <p>Untuk menunjang minat membaca dan kegiatan di Lingungan Perpustakaan kami menyediakan fasilitas fasilitas yang
-                    bisa bermanfaat, nyaman dan mendukung.</p>
+                <p>Beberapa prestasi yang pernah di peroleh STIKES ICME Jombang pada beberapa ajang Perlombaan.</p>
             </header>
             <div class="row justify-content-center">
                 <!-- ========== Single Blog Post ========== -->
@@ -438,9 +471,10 @@
                     <div class="footer-single-widget">
                         <ul class="footer-menu d-flex justify-content-between">
                             <li><a href="https://stikesicme-jbg.ac.id/">Home</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id/profil.html">Profil</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/profile.html">Profil</a></li>
                             <li><a href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a></li>
                             <li><a href="http://139.59.107.249/pmb">SPMB</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/pmb.html">PMB</a></li>
                             <li><a href="http://test-siakad.stikesicme-jbg.ac.id/tracer">Alumni</a></li>
                             <li><a href="http://digilib.stikesicme-jbg.ac.id/ojs/">OJS</a></li>
                             <li><a href="https://stikesicme-jbg.ac.id/gallery.html">Galeri</a></li>
@@ -457,7 +491,7 @@
                         
                         <div class="copywrite-text mt-30">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib & NyanDev Indonesia</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>
