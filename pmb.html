@@ -341,7 +341,7 @@
             <div class="row justify-content-center biayaController" ng-controller="BiayaController as controller">
                 <div class='table-responsive'>
                     <table id="tableBiaya" class="table table-bordered table-borderless table-sm" style="font-size: 13px;">
-                        <thead>
+                        <thead class="freeze">
                             <tr class="text-center">
                                 <th class="align-middle" style="width: calc(100% / 9);">Jalur</th>
                                 <th class="align-middle" style="width: calc(100% / 9);">Program Studi</th>
@@ -595,7 +595,7 @@
                 <h3>Daftar Ulang dan Pembayaran</h3>
                 <p>Berikut adalah informasi biaya daftar ulang dan cara pembayaran bagi calon Mahasiswa di STIKES ICME Jombang.</p>
             </header>
-            <div class="row justify-content-center" style="padding-top: 20px;">
+            <div class="row justify-content-center sectionDaftarUlang" style="padding-top: 20px;">
                 <div class="col-12 col-md-6">
                     <h6>Daftar Ulang</h6>
                     <p>Untuk prosess daftar ulang untuk calon Mahasiswa di kenakan biaya sesuai dengan jalur pendaftaran sebagai berikut</p>
@@ -652,6 +652,9 @@
             </header>
             <div class="row section-padding-10 h-400 align-items-center justify-content-center">
                 <div class="col-12 col-md-6">
+                    <img data-src="img-min/submitting.webp" class="lazyload col-12" alt="" onerror="this.onerror=null; this.src='img-min/submitting.png'" />
+                </div>
+                <div class="col-12 col-md-6">
                     <div class="row justify-content-center">
                         <div class="col-6">
                             <div class="card">
@@ -688,9 +691,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <img data-src="img-min/submitting.webp" class="lazyload col-12" alt="" onerror="this.onerror=null; this.src='img-min/submitting.png'" />
                 </div>
             </div>
 

@@ -27,6 +27,23 @@
     font-size: 1.6em !important;
 }
 
+.sectionDaftarUlang h6 {
+    font-weight: 600;
+}
+header.section-header h3 {
+    position: relative;
+}
+header.section-header h3:before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    background: #d9ebff;
+    z-index: -1;
+    border-radius: 50%;
+    margin-left: -8px;
+}
+
 .border {
     padding: 4px 8px;
     border-radius: 4px;
