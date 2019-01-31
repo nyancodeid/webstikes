@@ -34,20 +34,42 @@ angular.module('website', [])
     this.prodis = prodis
 })
 .controller('GalleryController', function($scope, $http) {
-    $scope.data = []
+    $scope.data = [];
+    $scope.isSupportWebp = true;
+    
+    function hasWebP() {
+        var rv = $.Deferred(), img = new Image();
+        img.onload = function () { rv.resolve(); };
+        img.onerror = function (error) { rv.reject(error); };
+        img.src = "https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/test.webp";
+        return rv.promise();
+    }
 
-    $.getJSON('gallery.json', function(gallery) {
-        gallery = gallery.map(function(image) {
-            image.png = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url=" + encodeURI(image.link)
-            image.webp = image.link.replace(".png", ".webp")
-        
-            return image;
-        })
+    hasWebP().then(function() {
+        $scope.isSupportWebp = true;
 
-        $scope.$apply(function () {
-            $scope.data = gallery;
-        });
+        runFetchGallery();
+    }, function(error) {
+        console.error(error)
+        $scope.isSupportWebp = false;   
+        runFetchGallery();
     })
+
+    function runFetchGallery() {
+        $.getJSON('gallery.json', function (gallery) {
+
+            gallery = gallery.map(function (image) {
+                image.png = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url=" + encodeURI(image.link)
+                image.webp = image.link.replace(".png", ".webp")
+
+                return image;
+            })
+
+            $scope.$apply(function () {
+                $scope.data = gallery;
+            });
+        })
+    }
 })
 .controller('BiayaController', function($scope) {
     var static = {

@@ -100,7 +100,7 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ********** Hero Area Start ********** -->
-    <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(img/blog-img/bg4.jpg);">
+    <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img/blog-img/bg4.jpg);">
         <header class="section-header text-center" style="padding-top: calc((400px / 2) - (63px / 2));">
             <h3 class="text-white">Galleri Foto</h3>
             <p>Setiap kegiatan yang di abadikan melalui Foto.</p>
@@ -116,7 +116,7 @@
                     <div class="single-blog-post">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img data-src="{{ gambar.webp }}" alt="{{ gambar.title }} - {{ gambar.description }}" class="lazyload" onerror="this.onerror=null; this.src=angular.element(this).scope().gambar.png" />
+                            <img data-src="{{ (isSupportWebp) ? gambar.webp : gambar.png }}" alt="{{ gambar.title }} - {{ gambar.description }}" class="lazyload" onerror="this.onerror=null; this.src=angular.element(this).scope().gambar.png" />
                             <!-- Catagory -->
                             <div class="post-cta"><a href="#">Galeri</a></div>
                         </div>
@@ -154,7 +154,7 @@
                         <span>Candimulyo</span><br>
                         <span>Jombang</span><br>
                         <br><br>
-                        <span>+(0321) 865446</span><br>
+                        <span>+(0321) 8494886</span><br>
                         <span>www.stikesicme-jbg.ac.id</span>
                     </div>
                 </div>
