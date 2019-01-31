@@ -116,7 +116,7 @@
                     <div class="single-blog-post">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
-                            <img data-src="{{ gambar.link }}" alt="{{ gambar.title }} - {{ gambar.description }}" class="lazyload" />
+                            <img data-src="{{ gambar.webp }}" alt="{{ gambar.title }} - {{ gambar.description }}" class="lazyload" />
                             <!-- Catagory -->
                             <div class="post-cta"><a href="#">Galeri</a></div>
                         </div>
@@ -126,6 +126,7 @@
                                 <h5>{{ gambar.title }}</h5>
                             </a>
                             <p>{{ gambar.description }}</p>
+                            <button onclick="console.log(angular.element(this).scope().gambar.png)">lihat scope</button>
                             <!-- Post Meta -->
                             <div class="post-meta">
                                 <p><a href="#" class="post-author">Jurnalis</a> on <a href="#" class="post-date">{{ gambar.date }}</a></p>

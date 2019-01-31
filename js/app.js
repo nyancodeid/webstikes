@@ -38,7 +38,8 @@ angular.module('website', [])
 
     $.getJSON('gallery.json', function(gallery) {
         gallery = gallery.map(function(image) {
-            image.link = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url=" + encodeURI(image.link)
+            image.png = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url=" + encodeURI(image.link)
+            image.webp = image.link.replace(".png", ".webp")
         
             return image;
         })
