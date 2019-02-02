@@ -5,7 +5,14 @@ const styleMinify = require('gulp-clean-css')
 const autoprefixer = require('gulp-autoprefixer')
 
 let path = {
-    js: ['./static/js/*.js', './static/app.js'],
+    js: [
+        './js/jquery-2.2.4.min.js',
+        './js/popper.min.js',
+        './js/bootstrap.min.js',
+        './js/lazysizes.min.js',
+        './js/plugins.js',
+        './js/active.js'
+    ],
     css: {
         custom: './css/custom.css',
         vendors: [
@@ -16,6 +23,12 @@ let path = {
     }
 }
 
+gulp.task('js:vendor', function() {
+    return gulp.src(path.js)
+        .pipe(concat('vendors.min.js'))
+        .pipe(uglify())
+        .pipe(gulp.dest('./dist/js'));
+})
 gulp.task('css:custom', function () {
     return gulp.src(path.css.custom)
         .pipe(autoprefixer({
@@ -40,3 +53,4 @@ gulp.task('css:vendor', function () {
 })
 
 gulp.task('css', ['css:vendor', 'css:custom'])
+gulp.task('js', ['js:vendor'])

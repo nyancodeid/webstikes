@@ -189,4 +189,37 @@ angular.module('website', [])
 
     $scope.default = static;
 })
+.controller('StructureController', function() {
+    this.organisasi = [
+        [
+            {jabatan: "Ketua", nama: "H.Imam Fatoni, SKM.,MM." }
+        ],
+        [ 
+            { jabatan: "Wakil Ketua 1", nama: "Dr. Hariyono, S.Kep.Ns., M.Kep" },
+            { jabatan: "Wakil Ketua 2", nama: "Hidayatun Nufus, S.Si.T.M.Kes" },
+            { jabatan: "Wakil Ketua 3", nama: "Harnanik Nawangsari, SST., M.Keb." }
+        ],
+        [
+            {jabatan: "Ka. PPPM", nama: "Baderi, S.Kom.MM." },
+            {jabatan: "Ka. PPMI", nama: "Lusyta Puri Ardhiyanti, S.S.T., M.Kes" }
+        ],
+        [
+            {jabatan: "Ka. Komisi Etik Penelitian", nama: "Siti Rohani, S.ST., M.Kes" }
+        ],
+        [
+            {jabatan: "Ka. Prodi S1 Keperawatan", nama: "Inayatur Rosyidah, S.Kep.Ns., M.Kes" },
+            {jabatan: "Ka. Prodi D3 Keperawatan", nama: "Maharani Tri Puspita, S.Kep.Ns.,M.Kes" },
+            {jabatan: "Ka. Prodi D3 Kebidanan", nama: "Nining Mustikaningrum, S.S.T.,M.Kes" },
+            {jabatan: "Ka. Prodi D4 Kebidanan", nama: "Ita Ni'matuz Zuhroh, S.Si.T.,M.Kes" },
+        ],
+        [
+            
+            {jabatan: "Ka. Prodi D3 Analis Kesehatan", nama: "Sri Sayekti, S.Si.M.Ked." },
+            {jabatan: "Ka. Prodi Profesi Ners", nama: "Dwi Prasetyaningati, S.Kep.Ns.,M.Kep" }
+        ],
+        [
+            {jabatan: "Ka. Perpustakaan", nama: "Dwi Nuriana, S.Kom.,M.IP" }
+        ]
+    ]
+})
 

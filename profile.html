@@ -26,16 +26,11 @@
     <!-- Style CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="/css/custom.css">
 </head>
 
 <body>
-    <!-- Preloader Start -->
-    <div id="preloader">
-        <div class="preload-content">
-            <div id="world-load"></div>
-        </div>
-    </div>
+    
     <!-- Preloader End -->
 
     <!-- ***** Header Area Start ***** -->
@@ -68,8 +63,17 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/berita">Berita</a>
                                 </li>
-                                <li class="nav-item active">
-                                    <a class="nav-link" href="/profile.html">Profil</a>
+                                <li class="nav-item active dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/profile.html#sejarah">Sejarah</a>
+                                        <a class="dropdown-item" href="/profile.html#visi">Visi</a>
+                                        <a class="dropdown-item" href="/profile.html#misi">Misi</a>
+                                        <a class="dropdown-item" href="/profile.html#tujuan">Tujuan</a>
+                                        <a class="dropdown-item" href="/profile.html#alamat">Alamat Kampus</a>
+                                        <a class="dropdown-item" href="/profile.html#sambutan">Sambutan Ketua</a>
+                                        <a class="dropdown-item" href="/struktur.html">Struktur Kepengurusan</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a>
@@ -109,7 +113,7 @@
     <!-- ***** Header Area End ***** -->
 
     <!-- ********** Hero Area Start ********** -->
-    <div class="hero-area height-600 bg-img background-overlay" style="background-image: url(https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/blog-img/banner-stikes.jpg);">
+    <div class="hero-area height-400 bg-img background-overlay" style="background-image: url(https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/blog-img/banner-stikes.jpg);">
         <div class="container h-100">
             <div class="row h-100 align-items-center justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
@@ -130,39 +134,53 @@
                 <!-- ============= Post Content Area ============= -->
                 <div class="col-12">
                     <div class="row">
-                        <div class="col-12 col-md-6">
-                            <blockquote class="mb-30">
+                        <div class="col-12 col-md-7 text-justify">
+                            <blockquote id="sejarah" class="mb-30">
                                 <h2>Sejarah</h2>
                             </blockquote>
                             <span>STIKES Insan Cendekia Medika digagas atas idealisme dan arah pendidikan yang berkembang di Indonesia dan Jawa Timur khususnya. Tumbuh dan berkembangnya masyarakat menuntut adanya pelayanan publik yang memadai, profesional, dan Berakhlakul Karimah. Atas prakarsa Yayasan <strong>SAMODRA ILMU CENDEKIA</strong> yang berpusat di Jl. Raya Ijen 24 Mojokerto, maka beridirilah STIKES ICME yang di deklarasikan pada 29 September 2005.</span>
                             <br><br>
-                            <blockquote class="mb-30">
+                            <blockquote id="visi" class="mb-30">
                                 <h2>Visi</h2>
                             </blockquote>
                             <span>Pusat pendidikan tinggi kesehatan yang kompeten berakhlak mulia, berdaya saing nasional 2017 dan internasional 2027.</span>
                             
-                            <br><br> <!-- Break -->
-                            
-                            <blockquote class="mb-30">
-                                <h2>Misi</h2>
-                            </blockquote>
-                            <ol type="1" style="padding-inline-start: 20px;">
-                                <li style="list-style: decimal;">Menyelenggarakan pendidikan kesehatan yang bertanggung jawab, peduli dan akuntabel.</li>
-                                <li style="list-style: decimal;">Menyelenggarakan penelitian dibidang kesehatan.</li>
-                                <li style="list-style: decimal;">Menyelenggarakan pengabdian kepada masyarakat yang berbasis pada kebutuhan masyarakat dan hasil riset.</li>
-                                <li style="list-style: decimal;">Menyelenggarakan kurikulum institusi yang berlandaskan nilai-nilai kepedulian, berakhlak mulia dan entrepreneurship.</li>
-                                <li style="list-style: decimal;">Menyelenggarakan kerja sama baik dalam negeri maupun luar negeri dalam melaksanakan tri dharma perguruan tinggi.</li>
-                            </ol>
+                            <br>
                         </div>
-                        <div class="col-12 col-md-6">
-                            <blockquote class="mb-30">
-                                <h2>Sambutan Ketua</h2>
-                            </blockquote>
+                        <div class="col-1 only-desktop"></div>
+                        <div class="col-12 col-md-4 only-desktop">
+                            <div id="sambutan" class="card">
+                                <div class="card-body">
+                                    <blockquote class="mb-30 text-center">
+                                        <h3>Sambutan Ketua</h3>
+                                    </blockquote>
+                                    <div class="text-center sambutanContent">
+                                        <img src="img-min/perawatan.png" alt="" >
+                                    </div>
+                                    <blockquote class="blockquote text-center">
+                                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                        <footer class="blockquote-footer">H.Imam Fatoni, SKM.,MM. <cite title="Source Title">STIKES ICME Jombang</cite></footer>
+                                    </blockquote>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <br> <!-- Break -->
+                    <br> <!-- Break -->
+                            
+                    <blockquote id="misi" class="mb-30">
+                        <h2>Misi</h2>
+                    </blockquote>
+                    <ol type="1" style="padding-inline-start: 20px;">
+                        <li style="list-style: decimal;">Menyelenggarakan pendidikan kesehatan yang bertanggung jawab, peduli dan akuntabel.</li>
+                        <li style="list-style: decimal;">Menyelenggarakan penelitian dibidang kesehatan.</li>
+                        <li style="list-style: decimal;">Menyelenggarakan pengabdian kepada masyarakat yang berbasis pada kebutuhan masyarakat dan hasil riset.</li>
+                        <li style="list-style: decimal;">Menyelenggarakan kurikulum institusi yang berlandaskan nilai-nilai kepedulian, berakhlak mulia dan entrepreneurship.</li>
+                        <li style="list-style: decimal;">Menyelenggarakan kerja sama baik dalam negeri maupun luar negeri dalam melaksanakan tri dharma perguruan tinggi.</li>
+                    </ol>
+                    <br>
 
-                    <blockquote class="mb-30">
+                    <blockquote id="tujuan" class="mb-30">
                         <h2>Tujuan</h2>
                     </blockquote>
                     <ol type="1" style="padding-inline-start: 20px;">
@@ -172,17 +190,16 @@
                         <li style="list-style: decimal;">Terlaksananya kurikulum institusi yang berlandaskan nilai-nilai kepedulian, berakhlak mulia dan entrepreneurship.</li>
                         <li style="list-style: decimal;">Terlaksananya kerja sama baik dalam negeri maupun luar negeri dalam melaksanakan tri dharma perguruan tinggi.</li>
                     </ol>
-
                     <br>
 
-                    <blockquote class="mb-30">
+                    <blockquote id="nilai" class="mb-30">
                         <h2>Nilai</h2>
                     </blockquote>
                     <span>Caring and Moralitty.</span>
                     
                     <br><br> <!-- Break -->
 
-                    <blockquote class="mb-30">
+                    <blockquote id="moto" class="mb-30">
                         <h2>Moto</h2>
                     </blockquote>
                     <span>"ICME THE BEST"
@@ -190,7 +207,7 @@
                     
                     <br><br> <!-- Break -->
 
-                    <blockquote class="mb-30">
+                    <blockquote id="alamat" class="mb-30">
                         <h2>Alamat</h2>
                     </blockquote>
                     <div class="row">
@@ -213,14 +230,53 @@
                             </div>
                         </div>
                     </div>
+                    <br><br>
+
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <blockquote id="alamat" class="mb-30">
+                                <h2>Sertifikat Akreditasi</h2>
+                            </blockquote>
+                            <span>Download Sertifikat Akreditasi Setiap Program Studi disini. Silahkan baca petunjuk sebelum Download.</span>
+                            <br><br>
+                            <a href="https://bit.ly/sertifikaticme" title="Sertifikat Akrediasi STIKES ICME Jombang - https://bit.ly/sertifikaticme" target="_blank" class="border linkSelengkapnya">Lihat Selengkapnya →</a>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <blockquote id="alamat" class="mb-30">
+                                <h2>Struktur Kepengurusan</h2>
+                            </blockquote>
+                            <span>Berikut adalah halaman Struktur Kepengurusan di STIKES ICME Jombang.</span>
+                            <br><br>
+                            <a href="/struktur.html" title="Struktur Kepengurusan STIKES ICME Jombang - https://stikesicme-jbg.ac.id/struktur.html" class="border linkSelengkapnya">Lihat Selengkapnya →</a>
+                        </div>
+                    </div>
+
+                    <div id="sambutan" class="card only-mobile">
+                        <div class="card-body">
+                            <blockquote class="mb-30 text-center">
+                                <h3>Sambutan Ketua</h3>
+                            </blockquote>
+                            <div class="text-center sambutanContent">
+                                <img src="img-min/perawatan.png" alt="" >
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                <footer class="blockquote-footer">Imam Fatoni <cite title="Source Title">STIKES ICME Jombang</cite></footer>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <!-- ============== Related Post ============== -->
+            <header class="section-header text-center sectionPadding">
+                <h3>Prestasi</h3>
+                <p>Beberapa prestasi yang pernah di peroleh STIKES ICME Jombang pada beberapa ajang Perlombaan.</p>
+            </header>
             <div class="row justify-content-center">
                 <!-- ========== Single Blog Post ========== -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.2s">
+                    <div class="single-blog-post post-style-3 mt-50" data-wow-delay="0.2s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
                             <img src="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img/blog-img/piala1.jpg" alt="">
@@ -241,7 +297,7 @@
                 </div>
                 <!-- ========== Single Blog Post ========== -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.4s">
+                    <div class="single-blog-post post-style-3 mt-50" data-wow-delay="0.4s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
                             <img src="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img/blog-img/kti.jpg" alt="">
@@ -262,7 +318,7 @@
                 </div>
                 <!-- ========== Single Blog Post ========== -->
                 <div class="col-12 col-md-6 col-lg-4">
-                    <div class="single-blog-post post-style-3 mt-50 wow fadeInUpBig" data-wow-delay="0.6s">
+                    <div class="single-blog-post post-style-3 mt-50" data-wow-delay="0.6s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
                             <img src="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img/blog-img/pemudi.jpg" alt="">
@@ -309,7 +365,7 @@
                     <div class="footer-single-widget">
                         <ul class="footer-menu d-flex justify-content-between">
                             <li><a href="https://stikesicme-jbg.ac.id/">Home</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id/profile.html">Profil</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/profile.html">Profile</a></li>
                             <li><a href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a></li>
                             <li><a href="http://139.59.107.249/pmb">SPMB</a></li>
                             <li><a href="https://stikesicme-jbg.ac.id/pmb.html">PMB</a></li>

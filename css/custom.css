@@ -1,3 +1,10 @@
+:target::before {
+    content: "";
+    display: block;
+    height: 60px; /* fixed header height*/
+    margin: -60px 0 0; /* negative fixed header height */
+}
+
 .blue-text {
     color: #1976D2;
 }
@@ -30,10 +37,12 @@
 .sectionDaftarUlang h6 {
     font-weight: 600;
 }
-header.section-header h3 {
+header.section-header h3,
+blockquote > h2 {
     position: relative;
 }
-header.section-header h3:before {
+header.section-header h3:before,
+blockquote > h2:before {
     content: '';
     position: absolute;
     height: 24px;
@@ -62,6 +71,10 @@ header.section-header h3:before {
     font-size: 13px;
 }
 
+.paddingOrganisasi .row {
+    margin-bottom: 1em;
+}
+
 .layananDigital ul li {
     margin-bottom: 8px;
 }
@@ -71,6 +84,14 @@ header.section-header h3:before {
     background: #0654a7;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+.sambutanContent img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    margin: 16px 0;
 }
 
 .linkSelengkapnya, 
@@ -148,6 +169,12 @@ header.section-header h3:before {
     }
     .only-desktop {
         display: none;
+    }
+    .paddingOrganisasi .row {
+        margin-bottom: 0;
+    }
+    .paddingOrganisasi .row .col-md-3 {
+        margin-bottom: 1em;
     }
 }
 @media only screen and (max-width: 576px) {

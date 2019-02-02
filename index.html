@@ -92,8 +92,17 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="/berita">Berita</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/profile.html">Profil</a>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="/profile.html#sejarah">Sejarah</a>
+                                        <a class="dropdown-item" href="/profile.html#visi">Visi</a>
+                                        <a class="dropdown-item" href="/profile.html#misi">Misi</a>
+                                        <a class="dropdown-item" href="/profile.html#tujuan">Tujuan</a>
+                                        <a class="dropdown-item" href="/profile.html#alamat">Alamat Kampus</a>
+                                        <a class="dropdown-item" href="/profile.html#sambutan">Sambutan Ketua</a>
+                                        <a class="dropdown-item" href="/struktur.html">Struktur Kepengurusan</a>
+                                    </div>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a>
@@ -140,9 +149,9 @@
             <!-- Single Slide -->
             <div class="single-hero-slide bg-img background-overlay" style="background-image: url(https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/blog-img/banner-stikes.jpg);"></div>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img background-overlay" style="background-image: url(https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/banner-pmb.jpg);"></div>
+            <div class="single-hero-slide bg-img background-overlay lazyload" data-bgset="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/banner-pmb.jpg"></div>
             <!-- Single Slide -->
-            <div class="single-hero-slide bg-img background-overlay" style="background-image: url(https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/blog-img/bg2.jpg);"></div>
+            <div class="single-hero-slide bg-img background-overlay lazyload" data-bgset="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/blog-img/bg2.jpg"></div>
         </div>
 
         <!-- Hero Post Slide -->
@@ -202,7 +211,7 @@
                 <div class="col-12 col-md-6">
                     <img data-src="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/school.png" class="col-12 lazyload" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6  text-justify">
                     <h1>Sekilas</h1>
                     <p style="line-height: 1.6;"><strong>STIKES Insan Cendekia Medika</strong> digagas atas idealisme dan arah pendidikan yang berkembang di Indonesia dan Jawa Timur
                     khususnya. Tumbuh dan berkembangnya masyarakat menuntut adanya pelayanan publik yang memadai, profesional, dan
@@ -227,7 +236,7 @@
                 <div class="col-12 col-md-6">
                     <img data-src="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/img-min/layanan.jpg" class="col-12 lazyload" alt="">
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6  text-justify">
                     <h1>Layanan Digital</h1>
                     <p style="line-height: 1.6;">Untuk menghadapi Era Industri 4.0 <strong>STIKES ICME Jombang</strong> mulai memperbaiki pelayanan dan
                     sarana yang dimiliki menjadi lebih baik dan cepat dengan cara menjadikannya bisa di akses secara Digital. Langkah ini juga di ambil sesuai
@@ -484,7 +493,7 @@
                     <div class="footer-single-widget">
                         <ul class="footer-menu d-flex justify-content-between">
                             <li><a href="https://stikesicme-jbg.ac.id/">Home</a></li>
-                            <li><a href="https://stikesicme-jbg.ac.id/profile.html">Profil</a></li>
+                            <li><a href="https://stikesicme-jbg.ac.id/profile.html">Profile</a></li>
                             <li><a href="http://lpmi.stikesicme-jbg.ac.id/">LPMI</a></li>
                             <li><a href="http://139.59.107.249/pmb">SPMB</a></li>
                             <li><a href="https://stikesicme-jbg.ac.id/pmb.html">PMB</a></li>
@@ -514,21 +523,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     </footer>
 
     <!-- ***** Footer Area End ***** -->
-
-    <!-- jQuery (Necessary for All JavaScript Plugins) -->
-    <script src="js/jquery/jquery-2.2.4.min.js"></script>
-    <!-- Popper js -->
-    <script src="js/popper.min.js"></script>
+    
+    <!-- Vendors js -->
+    <script src="/dist/js/vendors.min.js"></script>
     <!-- Angular js -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.6/angular.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- lazysizes js -->
-    <script src="js/lazysizes.min.js" async=""></script>
-    <!-- Plugins js -->
-    <script src="js/plugins.js"></script>
-    <!-- Active js -->
-    <script src="js/active.js"></script>
     <!-- App js -->
     <script src="js/app.js"></script>
 </body>
