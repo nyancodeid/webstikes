@@ -47,6 +47,13 @@
             z-index: 1000000;
         }
     </style>
+
+    <!-- Preconnect DNS -->
+    <link href="https://cdn.jsdelivr.net" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://www.youtube.com" rel="preconnect" crossorigin>
+
     <!-- Style CSS -->
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/style.css">
@@ -143,7 +150,6 @@
 
     <!-- ********** Hero Area Start ********** -->
     <div class="hero-area">
-
         <!-- Hero Slides Area -->
         <div class="hero-slides owl-carousel">
             <!-- Single Slide -->
@@ -157,6 +163,15 @@
         <!-- Hero Post Slide -->
         <div class="hero-post-area">
             <div class="container">
+                <div class="hero-post-title row h-100 align-items-center justify-content-center">
+                    <div class="col-12 col-md-8 col-lg-6">
+                        <div class="single-blog-title text-center">
+                            <!-- Catagory -->
+                            <h3>STIKES ICME Jombang</h3>
+                            <p>Sekolah Tinggi Kesehatan Terakreditasi</p>
+                        </div>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="col-12">
                         <div class="hero-post-slide">
@@ -185,16 +200,6 @@
                                 </div>
                                 <div class="post-title">
                                     <a>“Harta sejati adalah kesehatan, bukan emas dan perak” – Mahatma Gandhi</a>
-                                </div>
-                            </div>
-                            <!-- Single Slide -->
-                            <div class="single-slide d-flex align-items-center">
-                                <div class="post-number">
-                                    <p>4</p>
-                                </div>
-                                <div class="post-title">
-                                    <a>“Waktu dan kesehatan adalah dua aset berharga yang tidak kita kenali dan hargai sampai mereka telah habis.” – Denis
-                                    Waitley</a>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +340,7 @@
                 <p>Berikut adalah Program Studi yang ada di STIKES ICME Jombang.</p>
             </header>
             <div class="row justify-content-center prodiController" ng-controller="ProdiController as controller">
-                <div class="col-12 col-md-6 col-lg-3" ng-repeat="prodi in controller.prodis">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3" ng-repeat="prodi in controller.prodis">
                     <div class="single-blog-post post-style-3 mt-50" data-wow-delay="0.2s">
                         <!-- Post Thumbnail -->
                         <div class="post-thumbnail">
