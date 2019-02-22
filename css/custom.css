@@ -39,6 +39,11 @@
     background-size: cover;
 }
 
+.linkInline {
+    margin: 1em 0;
+    display: inline-block;
+}
+
 .prodiController {
     margin-left: -2vw;
     margin-right: -2vw;
@@ -236,6 +241,14 @@ blockquote > h2:before {
     }
     .fasilitasSection ul li {
         display: inline-block;
+    }
+
+    .whatsappGrid a {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .whatsappGrid a:parent {
+        text-align: center;
     }
 }
 @media only screen and (max-width: 576px) {
