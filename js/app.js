@@ -56,7 +56,7 @@ angular.module('website', [])
     })
 
     function runFetchGallery() {
-        $.getJSON('gallery.json', function (gallery) {
+        $.getJSON('https://cdn.jsdelivr.net/gh/nyancodeid/webstikes@master/gallery.json', function (gallery) {
 
             gallery = gallery.map(function (image) {
                 image.png = "https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&url=" + encodeURI(image.link)

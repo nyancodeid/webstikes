@@ -18,6 +18,15 @@
 .hero-post-title {
     margin-bottom: 12%;
 }
+.height-300 {
+    height: 300px !important;
+}
+.height-200 {
+    height: 300px !important;
+}
+.height-100 {
+    height: 300px !important;
+}
 
 .image-container-full {
     height: 21em;
@@ -152,7 +161,10 @@ blockquote > h2:before {
     padding: 8px 16px;
 }
 
-.sambutanKetua p {
+.sambutanKetua {
+    font-family: medium-content-serif-font,Georgia,Cambria,"Times New Roman",Times,serif;
+}
+.sambutanKetua .content p {
     margin-bottom: 2em;
 
     letter-spacing: .01rem;
@@ -169,7 +181,26 @@ blockquote > h2:before {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga" on;
+}
+
+.sambutanKetua .img-profile {
+    margin-bottom: 3em;
+}
+.sambutanKetua .img-profile img {
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+
+    display: inline-block;
+}
+.sambutanKetua .img-profile .detail-profile {
+   display: inline-block;
+   vertical-align: top;
+
+    margin-left: 16px;
+}
+.sambutanKetua .img-profile .detail-profile h4 {
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 978px) {
