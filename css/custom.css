@@ -247,8 +247,12 @@ blockquote > h2:before {
         display: inline-block;
         margin-top: 10px;
     }
-    .whatsappGrid a:parent {
+    .center--only-mobile {
         text-align: center;
+    }
+
+    .single-blog-post.post-style-3.mt-50 {
+        margin-top: 1em;
     }
 }
 @media only screen and (max-width: 576px) {

@@ -12,5 +12,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.1",
     "pump": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp-sitemap": "^6.2.0"
   }
 }

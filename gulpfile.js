@@ -3,6 +3,7 @@ const uglify = require('gulp-uglify')
 const concat = require('gulp-concat')
 const styleMinify = require('gulp-clean-css')
 const autoprefixer = require('gulp-autoprefixer')
+const sitemap = require('gulp-sitemap')
 
 let path = {
     js: [
@@ -20,7 +21,15 @@ let path = {
             '!./css/custom.css',
             '!./css/font-awesome.min.css'
         ]
-    }
+    },
+    html: [
+        './index.html',
+        './gallery.html',
+        './pmb.html',
+        './struktur.html',
+        './sambutan-ketua.html',
+        './profile.html'
+    ]
 }
 
 gulp.task('js:vendor', function() {
@@ -50,6 +59,18 @@ gulp.task('css:vendor', function () {
             console.log(`${details.name}: ${details.stats.minifiedSize}`);
         }))
         .pipe(gulp.dest('./dist/css'));
+})
+gulp.task('sitemap', function () {
+    gulp.src(path.html, { read: false })
+        .pipe(sitemap({
+            siteUrl: 'https://stikesicme-jbg.ac.id',
+            changefreq: 'hourly',
+            priority: function (siteUrl, loc, entry) {
+                // Give pages inside root path (i.e. no slashes) a higher priority
+                return loc.split('/').length === 0 ? 1 : 0.8;
+            }
+        }))
+        .pipe(gulp.dest('./'))
 })
 
 gulp.task('css', ['css:vendor', 'css:custom'])
