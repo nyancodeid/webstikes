@@ -36,7 +36,22 @@
       <priority>0.80</priority>
    </url>
    <url>
-      <loc>https://www.stikesicme-jbg.ac.id/gallery.html</loc>
+      <loc>https://siakad.stikesicme-jbg.ac.id</loc>
+      <lastmod>2019-02-22T06:26:02+00:00</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>http://digilib.stikesicme-jbg.ac.id/ojs/</loc>
+      <lastmod>2019-02-22T06:26:02+00:00</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>http://digilib.stikesicme-jbg.ac.id/elearning/</loc>
+      <lastmod>2019-02-22T06:26:02+00:00</lastmod>
+      <priority>0.80</priority>
+   </url>
+   <url>
+      <loc>http://digilib.stikesicme-jbg.ac.id/</loc>
       <lastmod>2019-02-22T06:26:02+00:00</lastmod>
       <priority>0.80</priority>
    </url>

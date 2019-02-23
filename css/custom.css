@@ -209,6 +209,9 @@ blockquote > h2:before {
 }
 
 @media only screen and (max-width: 978px) {
+    .header-area .navbar {
+        height: 84px;
+    }
     .navbar .navbar-collapse {
         position: absolute;
         top: 84px;
@@ -217,9 +220,6 @@ blockquote > h2:before {
     }
 }   
 @media only screen and (max-width: 768px) {
-    .header-area .navbar {
-        height: 84px;
-    }
     .prodiController {
         margin-left: -15px;
         margin-right: -15px;
